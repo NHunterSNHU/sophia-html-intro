@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/loadDarkModeSetting.js"></script>
+        <script src="js/darkMode.js" defer></script>
+    </head>
+    <body>
 
+        <!Same header for all pages, with a skip link for accessibility.>
+        <a href="#main-content">Skip to main content</a>
+        <header>
+            <section class="logo-container">
+                <img src="media/bakery-logo_c.png" alt="North Star Bakery Logo" class="logo" width="120" height="102">
+            </section>
+            <h1>North Star Bakery</h1> 
+            <nav class="nav-container">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link" aria-current="page">About</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="contact.html" class="nav-link">Contact us</a>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <section>
+                <video
+                    autoplay
+                    loop
+                    src="media/bakery-behind-scenes_c.mp4"
+                    width=100%
+                    height=auto>
+                    Your browser does not support the video element.
+                </video>
+                <h2>About Us</h2>
+                <p>We are a family-owned business that has been serving the community for over 20 years. Our bakery is known for its fresh bread and cookies.</p>
+
+                <h2>Our Philosophy</h2>
+                <p>Here at North Star Bakery, every loaf starts before sunrise.
+                    We use simple ingredients, local grains, and time; because good bread can't be rushed.
+                    Stop by and taste the difference, or place a pre-order and we'll have something fresh waiting for you!
+                </p>
+            </section>
+        </main>
+        <footer>
+            <button id="dark-light-mode">Dark Mode</button>
+        </footer>
+    </body>
+</html>
