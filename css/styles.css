@@ -1,0 +1,58 @@
+/* Page-wise CSS styles for the website */
+html {
+    font-family: Arial, sans-serif;
+    color: #6B3E26;
+    background-color: #FFF8F0;
+}
+
+.dark-mode {
+    background-color: #6B3E26;
+    color: #FFF8F0;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row; /* Aligns the navigation links in a horizontal row */
+  justify-content: center; /* Centers the navigation links horizontally */
+  gap: 20px; /* Adds space between the links */
+  margin-top: 10px; /* Adds some space above the navigation */
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-left: 10px;
+    margin-top: 5px; /* Adds space between the input box and the text error */
+    margin-bottom: 5px;
+}
+
+/* Products Page Styles */
+.products-cookie-container {
+  display: flex;
+  flex-direction: column; /* Aligns the items in a vertical column */
+  justify-content: left; /* Centers the items horizontally */
+  flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+  gap: 20px; /* Adds space between the items */
+  margin: 0px;
+}
+
+@media (min-width: 600px) {
+  .products-cookie-container {
+    flex-direction: row; /* Aligns the items in a horizontal row for larger screens */
+    }
+}
+
+
+/* Contact Page Styles */
+.pickup-conditional-panel {
+  display: none; /* Initially hide the panel */
+}
+
+#typePickup:checked ~ .pickup-conditional-panel {
+  display: block; /* Show the panel when the pickup radio button is selected */
+}

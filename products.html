@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Our Products</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/loadDarkModeSetting.js"></script>
+        <script src="js/darkMode.js" defer></script>
+    </head>
+    <body>
 
+        <!Same header for all pages, with a skip link for accessibility.>
+        <a href="#main-content">Skip to main content</a>
+        <header>
+            <section class="logo-container">
+                <img src="media/bakery-logo_c.png" alt="North Star Bakery Logo" class="logo" width="120" height="102">
+            </section>
+            <h1>North Star Bakery</h1> 
+            <nav class="nav-container">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="products.html" class="nav-link" aria-current="page">Products</a>
+                <a href="contact.html" class="nav-link">Contact us</a>
+            </nav>
+        </header>
+
+        <main id="main-content">
+                <h2>Our Products</h2>
+
+            <section>
+                <img src="media/bakery-bread_c.png" alt="Bread" width="300" height="300">
+                <h3>Bread - $5 per loaf</h3>
+                <ul>
+                    <li>Sourdough</li>
+                    <li>Whole Wheat</li>
+                    <li>Rye</li>
+                </ul>
+            </section>
+
+            <picture>
+                <source srcset="media/bakery-feature-small_c.png" alt="Cookies" media="(max-width: 600px)">
+                <img src="media/bakery-feature-large_c.png" alt="Cookies" height="300">
+            </picture>
+            <section class="products-cookie-container">
+                <br>
+                <div class="column">
+                    <h3>Classic Cookies - $2 each</h3>
+                    <ul>
+                        <li>Chocolate Chip</li>
+                        <li>Oatmeal Raisin</li>
+                        <li>Peanut Butter</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Specialty Cookies - $3 each</h3>
+                    <ul>
+                        <li>Macarons</li>
+                        <li>Lemon Bars</li>
+                        <li>Brownies</li>
+                    </ul>
+                </div>
+            </section>
+
+            <p>Interested in <a href="contact.html">learning more or placing an order?</a> </p>
+
+        </main>
+        <footer>
+            <button id="dark-light-mode">Dark Mode</button>
+        </footer>
+    </body>
+</html>

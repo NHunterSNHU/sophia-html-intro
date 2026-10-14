@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/loadDarkModeSetting.js"></script>
+        <script src="js/darkMode.js" defer></script>
+        <script src="js/contactForm.js" defer></script>
+    </head>
+    <body>
 
+        <!Same header for all pages, with a skip link for accessibility.>
+        <a href="#main-content">Skip to main content</a>
+        <header>
+            <section class="logo-container">
+                <img src="media/bakery-logo_c.png" alt="North Star Bakery Logo" class="logo" width="120" height="102">
+            </section>
+            <h1>North Star Bakery</h1> 
+            <nav class="nav-container">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="contact.html" class="nav-link" aria-current="page">Contact us</a>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <section>
+                <h2>Contact Us</h2>
+                <p>Have a general inquiry or want to schedule a pickup order? Please fill out the form below and we will get back to you as soon as possible.</p>
+                
+                <form action="" method="post" class="contact-form" id="contactForm" novalidate>
+                    
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label for="fName">First Name:</label>
+                        <input type="text" id="fName" name="fName" required>
+                        <span class="error-message" id="fNameError"></span>
+
+                        <br>
+
+                        <label for="lName">Last Name:</label>
+                        <input type="text" id="lName" name="lName" required>
+                        <span class="error-message" id="lNameError"></span>
+
+                        <br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="emailError"></span>
+                    </fieldset>
+
+                    <!-- Inquiry Type Section -->
+                    <fieldset>
+                        <legend>Inquiry</legend>
+
+                        <!-- Radio buttons for inquiry type -->
+                        <input type="radio" id="typeGeneral" name="inquiryType" value="general" checked>
+                        General Inquiry
+                        <input type="radio" id="typePickup" name="inquiryType" value="pickup">
+                        Pickup Order
+                    
+                        <br>
+                        <br>
+                        
+                        <label class="form-label" for="message">Message:</label>
+                        <br>
+                        <textarea id="message" name="message" rows="5" class="input-field" required placeholder="Write your message here..."></textarea>
+                        <span class="error-message" id="messageError"></span>
+                        <br>
+
+                        <!-- Conditional Target Section (Must follow the radio inputs inside this container) -->
+                        <div class="pickup-conditional-panel">
+                            <br>
+                            <label class="form-label" for="allergyNotes">Allergy Notes (Optional):</label>
+                            <br>
+                            <input type="text" id="allergyNotes" name="allergyNotes" class="input-field" placeholder="e.g., Peanuts, Dairy, None">
+                            <br>
+                            <br>
+                            <label class="form-label" for="pickupDate">Pickup Date:</label>
+                            <br>
+                            <input type="date" id="pickupDate" name="pickupDate" class="input-field">
+                            <span class="error-message" id="pickupDateError"></span>
+                            <br>
+                        </div>
+                        
+                        <br>
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <button id="dark-light-mode">Dark Mode</button>
+        </footer>
+    </body>
+</html>
